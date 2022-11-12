@@ -16,7 +16,7 @@ a:link {
 
 nav {
     border:1px solid grey;
-    border-width:5px 0;
+    border-width:1px 0;
     list-style:none;
     margin:0;
     padding:0;
@@ -29,5 +29,5 @@ nav li {
 
 nav a{
     display: inline-block;
-    padding: 12px;
+    padding: 8px;
 }
