@@ -3,9 +3,16 @@
 
 <head>
   <title> Molly </title>
-  <link href="styles.css" rel="stylesheet">
+            	<link href="styles.css" rel="stylesheet" media="(min-width: 775px)">
+							<link href="small.css" rel="stylesheet" media="(min-width: 400px)" />
+				<link href="printstyles.css" rel="stylesheet" media="print">
 </head>
 <body>
+	<section class="wrapper">
+						<section class="header">
+                <section class="header-image">
+                </section>
+					</section>
   <nav>
 	<ul>
 		<li> <a href="index.html">Home</a> <br>
@@ -13,14 +20,36 @@
 		<li> <a href="molly.html">Molly</a>
 	</ul>
   </nav>
-  <h1>Molly</h1>
-  <img src="Media/Molly2.jpg" alt="Small puppy with brown and black face markings." width="400" height="450">
-  <aside> Molly is a purebred Jack Russell Terrier. She is a ball of chaotic energy that rarely stops moving. She was born March 26, 2022.
-  </aside>
+	<section class="main">
+  <h1 id="page-title">Molly</h1>
+	
+	<div class="row">
+  <div class="column">
+    <img src="Media/Molly2.jpg" alt="Small puppy with brown and black face markings." width="400" height="450">
+  </div>
+  <div class="column">
+    <video src="Media/mollyvid.mp4" controls width="400" height="450">
+  </div>
+	</div>
+	
+  <p> Molly is a purebred Jack Russell Terrier. She is a ball of chaotic energy that rarely stops moving. She was born March 26, 2022.
+  </p>
   <br>
-  <video src="Media/mollyvid.mp4" controls width="400" height="450">
-  </video>
-
+  
+	</section>
+	
+	      	 <section class="footer">
+          <p>
+        			Ashley Bloodgood &#183; 
+        			<a href="mailto:abloodg@bu.edu">abloodg@bu.edu</a>
+    			</p>
+         </section>
+				 
+				 <section id="print-notice">
+				 			<p>Printed from: https://abloodgood.github.io/</p>
+				</section>
+				
+</section>
 </body>
   
 </html>
