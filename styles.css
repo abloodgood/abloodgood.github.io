@@ -14,7 +14,7 @@
   header {
       display: flex;
       align-items: center;
-      padding: 20px 50px;
+      padding: 5px 25px;
   		background-color: var(--primary);
   }
   
@@ -25,7 +25,7 @@
 	.nav-list li {
 	  		list-style: none;
   		display: inline-block;
-  		padding: 0 20px;
+  		padding: 0 5px;
 	}
   
   .header-wrap {
@@ -50,7 +50,6 @@
         flex-direction: column;
         flex-flow: column;
         justify-content: space-evenly;
-        align-items: space-evenly;
        padding:10px;
        background:var(--primary);
        height: auto;
