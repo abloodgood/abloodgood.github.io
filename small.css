@@ -22,7 +22,7 @@
   }
   .header {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       padding: 5px 25px;
   		background-color: var(--primary);
   }
@@ -39,7 +39,7 @@
   
   .header-wrap {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
   	flex-wrap: wrap;
   }
   
@@ -88,10 +88,6 @@
       border-bottom: 1px solid #ddd;
     	text-align: center;
     	padding: 5px;
-    }
-  	
-  	  tr:nth-child(even) {
-        background-color: #f0f0f0
     }
 
 		  	/*recipe section style */
