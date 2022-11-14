@@ -11,26 +11,16 @@ body {
  margin:0 auto;
  background:white;
 }
-.header {
-		display:none;
-}
 
-.header-image {
-		display:none;
-}
-a:link {
-    color:black;
-    text-decoration:underline;
-    }
+ header {
+ display: none;
+ }
 
 .main {
  float: left;
  width:100%;
  background:white;
  height: auto;
-}
-nav {
- display: none;
 }
 
 .footer {

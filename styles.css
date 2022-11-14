@@ -1,154 +1,124 @@
-/*Body Styles*/
-body {
-       margin:0;
-       padding:0;
-       color: black;
-       background: white;
-       font-size: 16px;
-       font-family: Arial, sans-serif;
+  :root {
+  		--primary: #f5e9ef;
   }
   
-	/*Layout Styles*/
-.wrapper {
-       width: 1000px;
-       height: auto;
-       margin: auto;
-   		background:#f5e9ef;
+  * {
+      font-family: Arial, sans-serif;
   }
-	
-.header {
-     padding:5px 10px 5px 10px;
-		 height:250px;
-  }
-	
-	#page-title {
-	  text-align:left;
-  	color:black;
-		font-size: 32px;
-		font-family: Arial, sans-serif;
+  
+	.wrapper {
+		display: flex;
+		flex-flow: column wrap;
 	}
 	
-.header-image {
-    background-image: url("Media/header.jpg");
-    height: 100%;
-		box-shadow: 0 0 8px 8px #f5e9ef inset;
-    background-position: center;
-		background-color: #cccccc;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
+  header {
+      display: flex;
+      align-items: center;
+      padding: 20px 50px;
+  		background-color: var(--primary);
   }
+  
+	ul {
+	margin:0 auto;
+	}
 	
-.main{
-  	float:right;
-     width:800px;
-     padding:10px;
-     background:#f5e9ef;
-     height: auto;
-  }
+	.nav-list li {
+	  		list-style: none;
+  		display: inline-block;
+  		padding: 0 20px;
+	}
   
-  nav {
-      text-align:center;
-  		float: left;
-      width:15%;
-      padding:10px;
-      background:#f5e9ef;
-      height: 500px;
-      color: black;
-  }
-  
-  nav li {
-      display: inline;
-  }
-  
-  nav a{
-      display: inline-block;
-      padding: 8px;
-  }
-  
-.footer {
-   clear: both;
-   padding:5px 10px;
-   text-align:center;
-   font-size: 14px;
-  }  
-
-	/*Link Styles*/
-  a:link {
-      color:black;
-      text-decoration:none;
-      }
-      
-   a:visited {
-      color:blue;
-      text-decoration:none;
-  }
-      
-   a:hover {
-      color:black;
-      background-color:white;
-      text-decoration:underline;
-   }
-  
-	/*Table Styles*/
-  .center-table {
-  	margin-left: auto;
-    margin-right: auto;
-  }
-  
-  th {
-    background-color: black;
-    color: white;
-  }
-  
-  th, td {
-    border-bottom: 1px solid #ddd;
-  	text-align: center;
-  	padding: 5px;
-  }
-	
-	  tr:nth-child(even) {
-      background-color: #f0f0f0
-  }
- 
-  
-	/*Float Styles*/
-  .float-left {
-      float: left;
-      margin-right: 10px;
-      clear:both;
-  }
-  .float-right {
-      margin-left: 0px;
-      overflow:auto;
-      display:block;
-  }
-  
-/*Centering Images*/
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-	
-	/*Displaying images side by side*/
-	.row {
+  .header-wrap {
     display: flex;
+    align-items: center;
+  	flex-wrap: wrap;
   }
   
-  .column {
-    flex: 50%;
-    padding: 5px;
+  h1, h2, p {
+  		text-align: center;
+  		padding: 12px;
+  } 
+  
+  img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
   }
   
-	/*Don't display print notice on webpage*/
-  #print-notice {
-  	display:none;
+  .main{
+       display: flex;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: space-evenly;
+       padding:10px;
+       background:var(--primary);
+       height: auto;
+    }
+  	
+  	.footer {
+     clear: both;
+     padding:5px 10px;
+     text-align:center;
+  	 background: var(--primary);
+     font-size: 14px;
+    }  
+  	
+  	table {
+  					width: 50%;
+            margin-left: auto;
+            margin-right: auto;
   	}
-  
-	/*recipe section style*/
-  .recipe {
-    border: 2px solid black;
-    border-radius: 7px;
-  }
+  	
+  	th {
+      background-color: black;
+      color: white;
+  		text-align: center;
+    }
+    
+    th, td {
+      border-bottom: 1px solid #ddd;
+    	text-align: center;
+    	padding: 5px;
+    }
+  	
+  	  tr:nth-child(even) {
+        background-color: #f0f0f0
+    }
+
+		  	/*recipe section style */
+    .recipe {
+			display: flex;
+			flex-direction: column;
+      border: 2px solid black;
+      border-radius: 7px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+		
+  		.recipe h2 {
+  				text-align: left;
+  		}
+  		
+  		.recipe ul {
+  				display: flex;
+  				flex-direction: column;
+					margin: .5rem;
+  								}
+  			.recipe ol {
+  							display: flex;
+  				flex-direction: column;
+  				}
+				
+				.molly-pics img, video{
+  flex: 25%;
+  padding: 9rem;				
+	}
+					.molly-pics {
+							display: flex;
+				}		
+  		/*Don't display print notice on webpage*/
+    #print-notice {
+    	display:none;
+    	}
