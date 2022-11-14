@@ -1,0 +1,152 @@
+@media (min-width: 750px) and (max-width: 1200px) {
+/*Defines background color*/
+:root {
+	--primary: #f7dcea;
+}
+
+/*Whole webpage font*/
+* {
+	font-family: Arial, sans-serif;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+/*Header styles*/
+header {
+	display: flex;
+	align-items: center;
+	padding: 5px 25px;
+	background-color: var(--primary);
+}
+
+.header-wrap {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*Text styles*/
+h1,
+h2,
+p {
+	text-align: center;
+	padding: 12px;
+}
+
+/*Centers images*/
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*list styles*/
+ul {
+	margin: 0 auto;
+}
+
+.nav-list li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 5px;
+}
+
+/*main section style*/
+.main {
+	display: flex;
+	flex-direction: column;
+	flex-flow: column;
+	justify-content: space-evenly;
+	padding: 10px;
+	background: var(--primary);
+	height: auto;
+}
+
+/*footer style*/
+.footer {
+	clear: both;
+	padding: 5px 10px;
+	text-align: center;
+	background: var(--primary);
+	font-size: 14px;
+}
+
+/*link styles*/
+a:link,
+a:visited {
+	color: black;
+	text-align: center;
+	text-decoration: underline white;
+	display: inline-block;
+}
+
+/*Table styles*/
+table {
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+thead {
+	font-weight: : bold;
+}
+
+th {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+th,
+td {
+	border-bottom: 1px solid #ddd;
+	text-align: center;
+	padding: 5px;
+}
+
+tr:nth-child(even) {
+	background-color: #f0f0f0
+}
+
+/*recipe section style */
+.recipe {
+	display: flex;
+	flex-direction: column;
+	border: 2px solid black;
+	border-radius: 7px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.recipe h2 {
+	text-align: left;
+}
+
+.recipe ul {
+	display: flex;
+	flex-direction: column;
+	margin: .5rem;
+}
+
+.recipe ol {
+	display: flex;
+	flex-direction: column;
+}
+
+/*Molly page styles*/
+.molly-pics {
+	display: flex;
+	flex-flow: column;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*Don't display print notice on webpage*/
+#print-notice {
+	display: none;
+}
+}

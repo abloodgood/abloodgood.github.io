@@ -1,127 +1,149 @@
-  @media (min-width: 200px) and (max-width: 775px)  {
-	
-	  :root {
-  		--primary: #f5e9ef;
-  }
-  
-  * {
-      font-family: Arial, sans-serif;
-  }
-	
-  body {
-   margin:0;
-   padding:0;
-   color: black;
-   background: white;
-   font-size: 16px;
-  }
-  .wrapper {
+@media (min-width: 320px) and (max-width: 750px) {
+
+/*primary background color variable declaration*/
+	:root {
+		--primary: #f5e9ef;
+	}
+
+	* {
+		font-family: Arial, sans-serif;
+	}
+
+	/*main section styles*/
+	body {
+		margin: 0;
+		padding: 0;
+		color: black;
+		background: white;
+		font-size: 16px;
+	}
+
+	.wrapper {
 		display: flex;
 		flex-flow: column wrap;
-   background:#f5e9ef;
-  }
-  .header {
-      display: flex;
-      align-items: flex-start;
-      padding: 5px 25px;
-  		background-color: var(--primary);
-  }
-  
-	ul {
-	margin:0 auto;
+		background: #f5e9ef;
 	}
-  
-	.nav-list li {
-	  		list-style: none;
-  		display: inline-block;
-  		padding: 0 5px;
-	}
-  
-  .header-wrap {
-    display: flex;
-    align-items: flex-start;
-  	flex-wrap: wrap;
-  }
-  
-  h1, h2, p {
-  		text-align: center;
-  		padding: 12px;
-  } 
-  
-  img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-  }
-  
-  .main{
-       display: flex;
-        flex-direction: column;
-        flex-flow: column;
-        justify-content: space-evenly;
-       padding:10px;
-       background:var(--primary);
-       height: auto;
-    }
-  	
-  	.footer {
-     clear: both;
-     padding:5px 10px;
-     text-align:center;
-  	 background: var(--primary);
-     font-size: 14px;
-    }  
-  	
-  	table {
-  					width: 50%;
-            margin-left: auto;
-            margin-right: auto;
-  	}
-  	
-  	th {
-      background-color: black;
-      color: white;
-  		text-align: center;
-    }
-    
-    th, td {
-      border-bottom: 1px solid #ddd;
-    	text-align: center;
-    	padding: 5px;
-    }
 
-		  	/*recipe section style */
-    .recipe {
-			display: flex;
-			flex-direction: column;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-		
-  		.recipe h2 {
-  				text-align: left;
-  		}
-  		
-  		.recipe ul {
-  				display: flex;
-  				flex-direction: column;
-					margin: .5rem;
-  								}
-  			.recipe ol {
-  							display: flex;
-  				flex-direction: column;
-  				}
-				
-				.molly-pics img {
-  display: flex;
-	flex: 25%;
-  padding: 9rem;				
+	.header {
+		display: flex;
+		align-items: flex-start;
+		padding: 5px 25px;
+		background-color: var(--primary);
 	}
-					.molly-pics video{
-							display: none;
-				}		
-  		/*Don't display print notice on webpage*/
-    #print-notice {
-    	display:none;
-    	}
+
+	ul {
+		margin: 0 auto;
+	}
+
+	.nav-list li {
+		list-style: none;
+		display: inline-block;
+		padding: 0 5px;
+	}
+
+	.header-wrap {
+		display: flex;
+		align-items: flex-start;
+		flex-wrap: wrap;
+	}
+
+	h1,
+	h2,
+	p {
+		text-align: center;
+		padding: 12px;
+	}
+
+	img {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		flex-flow: column;
+		justify-content: space-evenly;
+		padding: 10px;
+		background: var(--primary);
+		height: auto;
+	}
+
+	/*footer styles*/
+	.footer {
+		clear: both;
+		padding: 5px 10px;
+		text-align: center;
+		background: var(--primary);
+		font-size: 14px;
+	}
+	
+/*link styles*/
+a:link,
+a:visited {
+	color: black;
+	text-align: center;
+	text-decoration: underline;
+	display: inline-block;
+}
+
+	/*Table styles*/
+	table {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	th {
+		background-color: black;
+		color: white;
+		text-align: center;
+	}
+
+	th,
+	td {
+		border-bottom: 1px solid #ddd;
+		text-align: center;
+		padding: 5px;
+	}
+
+	/*recipe section style */
+	.recipe {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.recipe h2 {
+		text-align: left;
+	}
+
+	.recipe ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.recipe ol {
+		display: flex;
+		flex-direction: column;
+	}
+
+	/*Molly page styles*/
+	.molly-pics img {
+		display: flex;
+		flex: 25%;
+		padding: 9rem;
+	}
+
+	.molly-pics video {
+		display: none;
+	}
+
+	/*Don't display print notice on webpage*/
+	#print-notice {
+		display: none;
+	}
+}

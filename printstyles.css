@@ -1,48 +1,53 @@
+/*Main layout styles*/
 body {
- margin:0;
- padding:0;
- color: black;
- background: white;
- font-size: 16px;
- font-family: Arial, sans-serif;
-}
-.wrapper {
- width: 90%;
- margin:0 auto;
- background:white;
+	margin: 0;
+	padding: 0;
+	color: black;
+	background: white;
+	font-size: 16px;
+	font-family: Arial, sans-serif;
 }
 
- header {
- display: none;
- }
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	background: white;
+}
+
+header {
+	display: none;
+}
 
 .main {
- float: left;
- width:100%;
- background:white;
- height: auto;
+	float: left;
+	width: 100%;
+	background: white;
+	height: auto;
 }
 
 .footer {
- display:none;
+	display: none;
 }
 
 th {
-  color: black;
+	color: black;
 }
 
-P, h2{
- padding-left:0px;
+P,
+h2 {
+	padding-left: 0px;
 }
 
+/*Include print notice footer*/
 #print-notice {
- clear: both;
- padding:5px 10px;
- text-align:center;
- font-size: 14px;
- display: block;
+	clear: both;
+	padding: 5px 10px;
+	text-align: center;
+	font-size: 14px;
+	display: block;
 }
 
+/*No videos in the print version*/
 video {
-	display:none;
-	}
+	display: none;
+}
