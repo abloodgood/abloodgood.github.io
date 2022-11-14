@@ -21,6 +21,7 @@
   .header-image {
       background-image: url("Media/header.jpg");
       height: 100%;
+			width:50%;
   		box-shadow: 0 0 8px 8px #f5e9ef inset;
       background-position: center;
   		background-color: #cccccc;
